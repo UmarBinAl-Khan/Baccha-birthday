@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Happy Birthday Baccha ❤️</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="rose-container"></div>
+
+<!-- PASSWORD SCREEN -->
+<div id="password-screen">
+  <div class="password-box">
+    <h1>For My Baccha ❤️</h1>
+    <p>Enter the secret password jaan...</p>
+
+    <input type="password" id="password" placeholder="Enter password" />
+    <button onclick="checkPassword()">Unlock My Heart</button>
+
+    <p id="error"></p>
+  </div>
+</div>
+
+<!-- POPUP -->
+<div id="popup" class="hidden">
+  <div class="popup-box">
+    <h2>Password is correct jaan 💖</h2>
+  </div>
+</div>
+
+<!-- MAIN WEBSITE -->
+<div id="main-content" class="hidden">
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="overlay"></div>
+
+    <img src="img1.jpg" class="bg-image" />
+
+    <div class="heart-box">
+      <div class="heart" onclick="startExperience()">❤️</div>
+      <p>Click Me<br>Baby Girl</p>
+    </div>
+
+  </section>
+
+  <!-- MUSIC -->
+  <audio id="music" src="aud.mp3"></audio>
+
+  <!-- SPLIT SCREEN -->
+  <section id="split-screen" class="hidden">
+
+    <!-- TOP HALF -->
+    <div class="top-half">
+
+      <img src="img1.jpg" class="photo top-left">
+      <img src="img2.jpg" class="photo top-right">
+      <img src="img3.jpg" class="photo center-photo">
+      <img src="img4.jpg" class="photo bottom-left">
+      <img src="img5.jpg" class="photo bottom-right">
+
+    </div>
+
+    <!-- BOTTOM HALF -->
+    <div class="bottom-half">
+
+      <div class="envelope-wrapper">
+
+        <div class="envelope" onclick="openLetter()">
+          <div class="heart-seal">❤️</div>
+        </div>
+
+        <p class="open-text">Click the envelope baccha 💌</p>
+
+      </div>
+
+      <div id="letter" class="hidden">
+
+        <div class="paper">
+
+          <h1>Happy Birthday My Baccha 🌹</h1>
+
+          <p>
+            Happy Birthday jaan ❤️<br><br>
+
+            Aaj ka din mere liye bahut special hai kyuki iss din meri zindagi ki sabse pyari ladki paida hui thi 🌹
+            Tum sirf meri girlfriend nahi ho baccha… tum meri khushi, meri dua aur mere har din ki smile ho.
+            
+            Jab bhi tum udaas hoti ho na, dil karta hai tumhe bas hug karke bolu ki sab theek ho jayega ❤️
+            
+            Main bas itna chahta hoon ki tum hamesha khush raho, smile karti raho, aur apni life me har wo cheez pao jo tum deserve karti ho ✨
+            
+            Baccha… tumhari importance meri life me words se explain nahi ho sakti.
+            
+            I love you forever jaan 💖
+            
+            Aur promise karta hoon ki chahe kuch bhi ho jaye… main hamesha tumhare saath rahunga 🌹
+            
+            Once again...
+            Happy Birthday My Beautiful Baccha ❤️
+            
+            — From Umar ✨
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+/* PASSWORD SCREEN */
+#password-screen {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #000000, #200000);
+}
+
+.password-box {
+  background: rgba(255,255,255,0.08);
+  padding: 40px;
+  border-radius: 25px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  width: 90%;
+  max-width: 400px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.password-box h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+
+.password-box p {
+  margin-bottom: 20px;
+}
+
+.password-box input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.password-box button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 15px;
+  background: crimson;
+  color: white;
+  font-size: 16px;
+}
+
+#error {
+  margin-top: 15px;
+  color: pink;
+}
+
+/* POPUP */
+#popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.8);
+  z-index: 999;
+}
+
+.popup-box {
+  background: #111;
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid crimson;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  z-index: 1;
+}
+
+.heart-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+}
+
+.heart {
+  font-size: 90px;
+  animation: pulse 1.5s infinite;
+  cursor: pointer;
+}
+
+.heart-box p {
+  font-size: 28px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* SPLIT SCREEN */
+#split-screen {
+  width: 100%;
+  min-height: 100vh;
+  background: black;
+}
+
+.top-half {
+  position: relative;
+  height: 50vh;
+  border-bottom: 2px solid crimson;
+}
+
+.photo {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 3px solid white;
+  box-shadow: 0 0 20px crimson;
+}
+
+.top-left {
+  top: 20px;
+  left: 20px;
+}
+
+.top-right {
+  top: 20px;
+  right: 20px;
+}
+
+.bottom-left {
+  bottom: 20px;
+  left: 20px;
+}
+
+.bottom-right {
+  bottom: 20px;
+  right: 20px;
+}
+
+.center-photo {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 170px;
+  height: 170px;
+}
+
+.bottom-half {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+
+/* ENVELOPE */
+.envelope {
+  width: 230px;
+  height: 150px;
+  background: #ad0000;
+  position: relative;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.envelope::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 115px solid transparent;
+  border-right: 115px solid transparent;
+  border-top: 75px solid #d10000;
+}
+
+.heart-seal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+}
+
+.open-text {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.paper {
+  margin-top: 40px;
+  background: rgba(255,255,255,0.08);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  max-width: 700px;
+  line-height: 2;
+  animation: fadeIn 2s ease;
+}
+
+.paper h1 {
+  margin-bottom: 20px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 55px;
+  color: pink;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ROSES */
+.rose {
+  position: fixed;
+  top: -50px;
+  font-size: 25px;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
+  }
+}
