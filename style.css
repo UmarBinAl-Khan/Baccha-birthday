@@ -265,7 +265,7 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
-}
+} 
 
 /* ROSES */
 .rose {
@@ -283,6 +283,34 @@ body {
 .hidden{
   display: none;
 }
+#popup:not(.hidden){
+  display: flex;
+}
+/* POPUP */
+#popup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.8);
+  z-index: 999;
+  display: none;
+}
+
+.popup-box{
+  background: #111;
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid crimson;
+}
+
+.hidden{
+  display: none;
+}
+
 #popup:not(.hidden){
   display: flex;
 }
