@@ -276,3 +276,6 @@ body {
     transform: translateY(110vh);
   }
 }
+.hidden{
+  display: none;
+}
