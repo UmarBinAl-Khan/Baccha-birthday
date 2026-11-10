@@ -1,7 +1,7 @@
 function checkPassword() {
   const password = document.getElementById("password").value;
 
-  if(password === "AkhanloveKRajbhar") {
+  if(password === "NoorjiUmarkibhen") {
 
     document.getElementById("popup").classList.remove("hidden");
 
@@ -12,7 +12,7 @@ function checkPassword() {
     }, 2500);
 
   } else {
-    document.getElementById("error").innerText = "Wrong password baccha 💔";
+    document.getElementById("error").innerText = "Wrong password Noor 💔";
   }
 }
 
