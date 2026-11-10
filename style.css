@@ -160,7 +160,9 @@ body {
   position: absolute;
   width: 140px;
   height: 140px;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
+  background: black;
   border-radius: 20px;
   border: 3px solid white;
   box-shadow: 0 0 20px crimson;
